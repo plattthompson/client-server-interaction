@@ -3,50 +3,12 @@ const post = document.querySelector(".post");
 const put = document.querySelector(".put");
 const del = document.querySelector(".del");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 get.addEventListener('click', () => {
 	fetch('http://localhost:3000/oneFish')
 		.then(res => res.json())
 		.then(data => console.log(data))
 		.catch(error => console.error(error));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 post.addEventListener('click', () => {
 	const sentence = {
@@ -62,19 +24,6 @@ post.addEventListener('click', () => {
 		.catch(error => console.error(error));
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 put.addEventListener('click', () => {
 	const update = {
 		words: "Please sir, update my data"
@@ -89,22 +38,6 @@ put.addEventListener('click', () => {
 		.catch(error => console.error(error));
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 del.addEventListener('click', () => {
 	const remove = {
 		words: "Please sir, update my data"
@@ -118,16 +51,3 @@ del.addEventListener('click', () => {
 		.then(data => console.log(data))
 		.catch(error => console.error(error));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
