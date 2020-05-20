@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #FAFAF2;
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: column;
+}
+
+.title-box {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-family: 'Oxygen';
+	font-size: 5em;
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	margin: 20px;
+	height: 80px;
+	width: 300px;
+	font-family: 'Fjalla One';
+	font-size: 2em;
+	background-color: #CDEBE9;
+	border-radius: 10px;
+	box-shadow: 5px 5px #888888;
+	transition: 0.2s;
+}
+
+.btn:hover {
+	background-color: #FCD0B7;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn:focus {
+	outline: none;
+}
